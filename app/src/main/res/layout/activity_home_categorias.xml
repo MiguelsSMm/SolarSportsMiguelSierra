@@ -25,10 +25,11 @@
             android:layout_marginTop="20sp"
             android:backgroundTint="#FFFFFF"
             android:contentDescription="volver"
+            android:onClick="volverPantallaHome"
             app:srcCompat="?attr/actionModeCloseDrawable" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textViewTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20sp"
@@ -39,6 +40,7 @@
 
 
         <LinearLayout
+            android:id="@+id/clickableLayoutCanchas"
             android:layout_width="match_parent"
             android:layout_height="205dp"
             android:layout_marginLeft="20dp"
@@ -82,11 +84,14 @@
             android:background="@drawable/shadow_bottom" />
 
         <LinearLayout
+            android:id="@+id/clickableLayoutGimnasios"
             android:layout_width="match_parent"
             android:layout_height="205dp"
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20sp"
             android:background="@drawable/border_layout"
+            android:clickable="true"
+            android:onClick="irPantallaRegistroCategoria"
             android:orientation="horizontal">
 
             <TextView
@@ -94,6 +99,7 @@
                 android:layout_width="226dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:clickable="false"
                 android:fontFamily="@font/urbanist_bold"
                 android:gravity="center_vertical"
                 android:paddingLeft="20dp"

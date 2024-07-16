@@ -18,16 +18,17 @@
 
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/botonVolver"
             android:layout_width="wrap_content"
             android:layout_height="54dp"
             android:layout_marginTop="20sp"
             android:backgroundTint="#FFFFFF"
             android:contentDescription="botonVolver"
+            android:onClick="volverPantallaHomeCategorias"
             app:srcCompat="?attr/actionModeCloseDrawable" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewTitulo"
             android:layout_width="344dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"

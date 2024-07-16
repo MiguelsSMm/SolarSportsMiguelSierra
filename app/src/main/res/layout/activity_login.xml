@@ -24,7 +24,7 @@
             android:layout_marginTop="20sp"
             android:backgroundTint="#FFFFFF"
             android:contentDescription="volver"
-            android:onClick="volverPantallaPrincipal"
+            android:onClick="volverPantallaHomeCategorias"
             app:srcCompat="?attr/actionModeCloseDrawable" />
 
         <TextView

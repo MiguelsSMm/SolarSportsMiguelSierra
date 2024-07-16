@@ -1,6 +1,10 @@
 package com.example.solarsportsmiguelsierra;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,12 +17,24 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        View clickableLayoutEstadisticas = findViewById(R.id.clickableLayoutEstadisticas);
+
+
+        clickableLayoutEstadisticas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, HomeCategoriasActivity.class);
+                intent.putExtra("TITLE", "Estadisticas x Categorias");
+                startActivity(intent);
+            }
         });
     }
+
+    public void irPantallaCategorias(View view){
+        Intent intent = new Intent(this,HomeCategoriasActivity.class);
+        startActivity(intent);
+    }
+
 }
