@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SolarSportsMiguelSierra"
         tools:targetApi="31">
         <activity
+            android:name=".BeneficiosActivity"
+            android:exported="false" />
+        <activity
             android:name=".Estadistica_Categoria_Activity"
             android:exported="true" />
         <activity

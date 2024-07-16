@@ -10,27 +10,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class LoginActivity extends AppCompatActivity {
+public class BeneficiosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_beneficios);
 
     }
-    public void volverPantallaPrincipal(View view){
-        Intent intent= new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
-    public void irPantallaHome(View view){
+    public void volverPantallaHome(View view){
         Intent intent= new Intent(this, HomeActivity.class);
-        startActivity(intent);
-    }
-
-    public void irPantallaRegistro(View view){
-        Intent intent= new Intent(this, RegisterActivity.class);
         startActivity(intent);
     }
 }

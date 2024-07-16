@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".RegistroCategoriaActivity">
 
     <LinearLayout
@@ -67,8 +68,7 @@
             android:layout_height="54dp"
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20sp"
-            android:layout_marginBottom="20sp"
-            />
+            android:layout_marginBottom="20sp" />
 
         <TextView
             android:id="@+id/textViewCantidadProducida"
@@ -140,8 +140,7 @@
             android:layout_height="54dp"
             android:layout_marginLeft="20sp"
             android:layout_marginRight="20sp"
-            android:layout_marginBottom="60sp"
-             />
+            android:layout_marginBottom="60sp" />
 
         <Button
             android:id="@+id/button5"

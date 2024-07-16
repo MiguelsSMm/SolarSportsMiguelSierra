@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:textAlignment="textEnd"
+    android:textDirection="inherit"
+    tools:context=".BeneficiosActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="889dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageButton
+            android:id="@+id/botonVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="botonVolver"
+            android:onClick="volverPantallaHomeCategorias"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/urbanist_bold"
+            android:text="Beneficios"
+            android:textSize="42sp" />
+
+
+        <LinearLayout
+            android:id="@+id/clickableLayoutCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_layout"
+            android:clickable="true"
+            android:onClick="irPantallaCategorias"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="207dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="226dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:fontFamily="@font/urbanist_bold"
+                    android:gravity="bottom"
+                    android:paddingLeft="20dp"
+                    android:text="Energia renovable: "
+                    android:textColor="#1E232C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:text="Los paneles solares generan electricidad a partir del sol, reduciendo la dependencia de combustibles fósiles y disminuyendo las emisiones de gases de efecto invernadero."
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="130dp"
+                android:layout_height="133dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/icono_energia_renovable" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/shadow_bottom" />
+
+        <LinearLayout
+            android:id="@+id/clickableLayoutEstadisticas"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/border_layout"
+            android:clickable="true"
+            android:onClick="irPantallaCategorias"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="212dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewAhorroEconomicoTitulo"
+                    android:layout_width="226dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:fontFamily="@font/urbanist_bold"
+                    android:gravity="bottom"
+                    android:paddingLeft="20dp"
+                    android:text="Ahorro económico:"
+                    android:textColor="#1E232C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewAhorroEconomicoTexto"
+                    android:layout_width="226dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:text="A largo plazo, la instalación de paneles solares puede reducir significativamente las facturas de electricidad al generar energía gratuita una vez recuperada la inversión inicial."
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="130dp"
+                android:layout_height="133dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                app:srcCompat="@drawable/icono_ahorro" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/shadow_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/border_layout"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewBajoMantenimientoTitulo"
+                    android:layout_width="226dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:fontFamily="@font/urbanist_bold"
+                    android:gravity="bottom"
+                    android:paddingLeft="20dp"
+                    android:text="Bajo mantenimiento:"
+                    android:textColor="#1E232C"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewBajoMantenimientoTexto"
+                    android:layout_width="226dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:text="Los paneles solares requieren poco mantenimiento, con una vida útil que puede superar los 25 años, proporcionando una fuente confiable y duradera de energía limpia."
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="130dp"
+                android:layout_height="133dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/icono_mantenimiento" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/shadow_bottom" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

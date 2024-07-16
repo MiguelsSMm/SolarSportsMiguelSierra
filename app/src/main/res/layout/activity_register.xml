@@ -5,7 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".RegisterActivity">
+
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="889dp"
@@ -78,13 +80,31 @@
             android:textStyle="bold"
             app:cornerRadius="8dp" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:fontFamily="@font/urbanist_medium"
-            android:text="Ya tienes una cuenta? Ingresa ahora" />
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Ya tienes una cuenta? " />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="irPantallaLogin"
+                android:text="Ingresa ahora"
+                android:textColor="#35C2C1" />
+
+        </LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

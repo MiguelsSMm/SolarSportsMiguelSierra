@@ -37,4 +37,13 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void irPantallaBeneficios(View view){
+        Intent intent = new Intent(this,BeneficiosActivity.class);
+        startActivity(intent);
+    }
+    public void irPantallaPrincipal(View view){
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+
 }
